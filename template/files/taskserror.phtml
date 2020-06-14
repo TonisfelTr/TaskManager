@@ -1,0 +1,16 @@
+<?php
+if (isset($_GET["res"])){
+    $res = $_GET["res"];
+    if ($res == "nvn"){ ?>
+        <div class="alert alert-danger">Имя должно быть не меньше 4 символов и не больше 16.</div>
+    <?php }
+    if ($res == "nve"){ ?>
+        <div class="alert alert-danger">Введён неправильный Email.</div>
+    <?php }
+    if ($res == "nle"){ ?>
+        <div class="alert alert-danger">Текст задачи должен быть больше 15 символов.</div>
+    <?php }
+    if ($res == "tsc"){ ?>
+        <div class="alert alert-success">Задача успешно создана!</div>
+    <?php }
+}

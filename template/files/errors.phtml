@@ -1,0 +1,17 @@
+<?php
+
+if (isset($_GET["res"])){
+    $res = $_GET["res"];
+    if ($res == "iu"){ ?>
+        <div class="alert alert-danger">Вы не ввели никнейм пользователя.</div>
+    <?php }
+    if ($res == "ip"){ ?>
+        <div class="alert alert-danger">Вы не ввели пароль пользователя.</div>
+    <?php }
+    if ($res == "une"){ ?>
+        <div class="alert alert-danger">Пользователя с данным никнеймом не существует.</div>
+    <?php }
+    if ($res == "pii"){ ?>
+        <div class="alert alert-danger">Вы ввели неверный пароль.</div>
+    <?php }
+}

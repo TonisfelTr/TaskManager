@@ -1,0 +1,23 @@
+<div class="cover">
+    <h4>Здравствуй, Admin!</h4>
+    <hr>
+    <form method="post" action="../../scripts/auth.php">
+        <table class="table">
+            <thead>
+            <tr style="background: radial-gradient(at left, #0f6674, #005cbf); color: white;">
+                <td>Создатель задачи</td>
+                <td>Email</td>
+                <td>Текст задачи</td>
+                <td>Статус</td>
+            </tr>
+            </thead>
+            <tbody>
+            {TASKS_CONTENTS}
+            </tbody>
+        </table>
+        <br>
+        {PAGINATION}
+        <br><br>
+        <button class="btn" type="submit" name="profile_exit">Выйти из аккаунта</button>
+    </form>
+</div>

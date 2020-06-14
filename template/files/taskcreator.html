@@ -1,0 +1,14 @@
+<div class="cover">
+    <form method="post" action="../../scripts/tasker.php">
+        <h4>Создание новой задачи</h4>
+        {ERRORS}
+        <label for="task_author_name">Ваше имя:</label>
+        <input type="text" class="form-control" id="task_author_name" name="task_author_name">
+        <label for="task_author_email">Ваш Email:</label>
+        <input type="email" class="form-control" id="task_author_email" name="task_author_email">
+        <label for="task_content">Суть задачи:</label>
+        <textarea id="task_content" name="task_content" class="form-control" style="resize: none;"></textarea>
+        <br>
+        <button class="btn btn-default" type="submit" name="task_create_btn">Отправить</button>
+    </form>
+</div>

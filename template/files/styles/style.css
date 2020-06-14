@@ -1,0 +1,25 @@
+html,
+body{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    overflow-x: auto;
+}
+
+.container {
+    padding-top: 25px;
+}
+
+div.cover {
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
+.btn-default{
+    border: 1px solid black;
+}
+
+.sort-triangle{
+    cursor: pointer;
+}
